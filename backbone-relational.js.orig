@@ -1960,7 +1960,11 @@
 		// Add 'models' in a single batch, so the original add will only be called once (and thus 'sort', etc).
 		// If `parse` was specified, the collection and contained models have been parsed now.
 		toAdd = singular ? ( toAdd.length ? toAdd[ 0 ] : null ) : toAdd;
+<<<<<<< HEAD
+		var result = set.call( this, toAdd, _.defaults( { parse: false, merge: false }, options ) );
+=======
 		var result = set.call( this, toAdd, _.defaults( { merge: false, parse: false }, options ) );
+>>>>>>> 5c46fad4194a94647a88d3910a3e3599ff35123a
 
 		for ( i = 0; i < newModels.length; i++ ) {
 			model = newModels[i];
